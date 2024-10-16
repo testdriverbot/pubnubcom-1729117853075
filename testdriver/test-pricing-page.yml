@@ -1,0 +1,24 @@
+version: 4.0.69
+steps:
+  - prompt: Click on "Pricing".
+    commands:
+      - command: hover-text
+        text: Pricing
+        description: link in the header
+        action: click
+  - prompt: Assert that the pricing details are displayed.
+    commands:
+      - command: assert
+        expect: the pricing details are displayed
+  - prompt: Choose the cheapest plan.
+    commands:
+      - command: hover-text
+        text: Create an Account
+        description: button for the Platform Free plan
+        action: click
+  - prompt: >-
+      Assert that the checkout page opens.  # Use the content of the file from
+      the environment
+    commands:
+      - command: assert
+        expect: the checkout page is open
