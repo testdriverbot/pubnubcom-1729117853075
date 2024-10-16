@@ -1,0 +1,7 @@
+version: 4.0.69
+steps:
+  - prompt: Click the search icon.
+    commands:
+      - command: hover-image
+        description: search icon in the browser toolbar
+        action: click
