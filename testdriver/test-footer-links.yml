@@ -1,0 +1,71 @@
+version: 4.0.69
+steps:
+  - prompt: Scroll down to the footer.
+    commands:
+      - command: scroll-until-text
+        text: Copyright 2024
+        direction: down
+  - prompt: Scroll down to the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll down to the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll down to the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: Click on the "Privacy Policy" link.
+    commands:
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+      - command: hover-text
+        text: Privacy Policy
+        description: link in the footer
+        action: click
+  - prompt: >-
+      Assert that the privacy policy page is displayed.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: Privacy Policy Page Title is visible
